@@ -5,6 +5,11 @@ from langchain.embeddings import OpenAIEmbeddings
 from langchain.vectorstores import Chroma
 from langchain.chains import RetrievalQA
 
+import os
+#os.environ['OPENAI_API_KEY'] = st.secrets['OPENAI_API_KEY']
+#os.environ['OPENAI_API_KEY'] = ''
+#os.environ['HUGGINGFACEHUB_API_TOKEN'] = ''
+
 def generate_response(uploaded_file, openai_api_key, query_text):
     # Load document if file is uploaded
     if uploaded_file is not None:
