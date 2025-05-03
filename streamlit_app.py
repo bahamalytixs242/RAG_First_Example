@@ -6,7 +6,7 @@ from langchain.vectorstores import Chroma
 from langchain.chains import RetrievalQA
 
 import os
-#os.environ['OPENAI_API_KEY'] = st.secrets['OPENAI_API_KEY']
+os.environ['OPENAI_API_KEY'] = st.secrets['OPENAI_API_KEY']
 #os.environ['OPENAI_API_KEY'] = ''
 #os.environ['HUGGINGFACEHUB_API_TOKEN'] = ''
 
