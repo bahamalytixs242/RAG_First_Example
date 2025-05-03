@@ -1,6 +1,7 @@
 !pip -q install streamlit openai chromadb tiktoken lang langchain   #huggingface_hub
 !pip install –U langchain-community
 
+
 import streamlit as st
 from langchain.llms import OpenAI
 from langchain.text_splitter import CharacterTextSplitter
@@ -9,7 +10,7 @@ from langchain.vectorstores import Chroma
 from langchain.chains import RetrievalQA
 import os
 
-os.environ['OPENAI_API_KEY'] = st.secrets['OPENAI_API_KEY']
+os.getenv['OPENAI_API_KEY'] = st.secrets['OPENAI_API_KEY']
 #os.environ['OPENAI_API_KEY'] = ''
 #os.environ['HUGGINGFACEHUB_API_TOKEN'] = ''
 
