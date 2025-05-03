@@ -1,7 +1,6 @@
 !pip -q install streamlit openai chromadb tiktoken lang langchain   #huggingface_hub
 !pip install –U langchain-community
 
-
 import streamlit as st
 from langchain.llms import OpenAI
 from langchain.text_splitter import CharacterTextSplitter
